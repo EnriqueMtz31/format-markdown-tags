@@ -1,0 +1,22 @@
+{
+  "env": {
+    "es2021": true,
+    "node": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 2021
+  },
+  "ignorePatterns": [".vscode", "node_modules", ".gitignore"],
+  "rules": {
+    "curly": ["error", "all"],
+    "semi": ["error", "always"],
+    "camelcase": ["error", { "properties": "always" }],
+    "capitalized-comments": [
+      "error",
+      "always",
+      { "ignoreConsecutiveComments": true }
+    ],
+    "indent": ["error", 4]
+  }
+}

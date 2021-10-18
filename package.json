@@ -2,10 +2,7 @@
   "name": "format-markdown-tags",
   "version": "1.0.0",
   "description": "CLI App to format markdown tags of notable app",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/EnriqueMtz31/format-markdown-tags.git"
@@ -20,5 +17,53 @@
   "bugs": {
     "url": "https://github.com/EnriqueMtz31/format-markdown-tags/issues"
   },
-  "homepage": "https://github.com/EnriqueMtz31/format-markdown-tags#readme"
+  "homepage": "https://github.com/EnriqueMtz31/format-markdown-tags#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "clear": "^0.1.0",
+    "clipboardy": "^3.0.0",
+    "conf": "^10.0.3",
+    "delay": "^5.0.0",
+    "inquirer": "^8.2.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.1",
+    "npm-watch": "^0.11.0"
+  },
+  "scripts": {
+    "watch": "npm-watch",
+    "eslint-cmd": "eslint --env node --ext .js src/",
+    "cli_app": "node src/"
+  },
+  "watch": {
+    "eslint-cmd": {
+      "patterns": [
+        "src",
+        "src/lib"
+      ],
+      "extensions": "js",
+      "build": {
+        "ignore": [
+          "node_modules",
+          ".gitignore",
+          ".eslintrc.json"
+        ]
+      },
+      "clearBuffer": true,
+      "quiet": false
+    },
+    "cli_app": {
+      "patterns": [
+        "src",
+        "src/lib"
+      ],
+      "extensions": "js",
+      "build": {
+        "ignore": "node_modules"
+      },
+      "clearBuffer": false,
+      "quiet": true
+    }
+  }
 }
