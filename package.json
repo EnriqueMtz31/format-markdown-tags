@@ -1,0 +1,24 @@
+{
+  "name": "format-markdown-tags",
+  "version": "1.0.0",
+  "description": "CLI App to format markdown tags of notable app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/EnriqueMtz31/format-markdown-tags.git"
+  },
+  "keywords": [
+    "node",
+    "JS",
+    "CLI"
+  ],
+  "author": "Enrique Martinez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EnriqueMtz31/format-markdown-tags/issues"
+  },
+  "homepage": "https://github.com/EnriqueMtz31/format-markdown-tags#readme"
+}
