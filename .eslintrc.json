@@ -9,6 +9,7 @@
   },
   "ignorePatterns": [".vscode", "node_modules", ".gitignore"],
   "rules": {
+    "no-unused-vars": "warn",
     "curly": ["error", "all"],
     "semi": ["error", "always"],
     "camelcase": ["error", { "properties": "always" }],
@@ -17,6 +18,6 @@
       "always",
       { "ignoreConsecutiveComments": true }
     ],
-    "indent": ["error", 4]
+    "indent": ["error", 2]
   }
 }

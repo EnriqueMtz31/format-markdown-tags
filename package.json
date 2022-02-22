@@ -29,41 +29,11 @@
   },
   "devDependencies": {
     "eslint": "^8.0.1",
-    "npm-watch": "^0.11.0"
+    "nodemon": "^2.0.13"
   },
   "scripts": {
     "watch": "npm-watch",
-    "eslint-cmd": "eslint --env node --ext .js src/",
-    "cli_app": "node src/"
-  },
-  "watch": {
-    "eslint-cmd": {
-      "patterns": [
-        "src",
-        "src/lib"
-      ],
-      "extensions": "js",
-      "build": {
-        "ignore": [
-          "node_modules",
-          ".gitignore",
-          ".eslintrc.json"
-        ]
-      },
-      "clearBuffer": true,
-      "quiet": false
-    },
-    "cli_app": {
-      "patterns": [
-        "src",
-        "src/lib"
-      ],
-      "extensions": "js",
-      "build": {
-        "ignore": "node_modules"
-      },
-      "clearBuffer": false,
-      "quiet": true
-    }
+    "eslint_cmd": "eslint --env node --ext .js src/",
+    "cli_app": "npx nodemon --no-stdin"
   }
 }
