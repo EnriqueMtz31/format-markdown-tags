@@ -34,6 +34,7 @@
   "scripts": {
     "watch": "npm-watch",
     "eslint_cmd": "eslint --env node --ext .js src/",
-    "cli_app": "npx nodemon --no-stdin"
+    "cli_app": "npx nodemon --no-stdin",
+    "fasdf": "sdf"
   }
 }
